@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.librarymanagement.AdminLogin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter username and password to login"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginLeft="35dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/admin_login_userF"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="24dp"
+        android:hint="Username"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/admin_login_userF"
+        android:layout_alignStart="@+id/admin_login_userF"
+        android:layout_below="@+id/admin_login_userF"
+        android:layout_marginTop="27dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/passFieldadminlogin" />
+
+    <Button
+        android:id="@+id/loginButtadminmainpage"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/passFieldadminlogin"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="27dp"
+        android:text="Login" />
+</RelativeLayout>

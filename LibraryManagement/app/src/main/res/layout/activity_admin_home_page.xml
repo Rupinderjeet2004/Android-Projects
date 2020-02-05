@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.librarymanagement.AdminHomePage">
+
+    <Button
+        android:id="@+id/addLibrarianadminmainpage"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="49dp"
+        android:layout_weight="1"
+        android:text="Add Librarian" />
+
+    <Button
+        android:id="@+id/remLibrarianadminmainpage"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="49dp"
+        android:layout_weight="1"
+        android:text="Remove Librarian" />
+
+    <Button
+        android:id="@+id/librarianListadminmainpage"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="49dp"
+        android:layout_weight="1"
+        android:text="Librarian List" />
+
+    <Button
+        android:id="@+id/seeDetailsadminmainpage"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="49dp"
+        android:layout_weight="1"
+        android:text="See Details" />
+
+    <Button
+        android:id="@+id/logOutadminmainpage"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="49dp"
+        android:layout_weight="1"
+        android:text="Log Out" />
+
+    <Button
+        android:id="@+id/changeColoradminmainpage"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="49dp"
+        android:layout_weight="1"
+        android:text="Change Color" />
+
+</LinearLayout>

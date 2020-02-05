@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.librarymanagement.seeDetails">
+
+
+    <Button
+        android:id="@+id/issuebuttIssuebookframe"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:elevation="0dp"
+        android:text="Issue Book" />
+
+    <Button
+        android:id="@+id/reissuebuttIssuebuttframe"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/issuebuttIssuebookframe"
+        android:layout_alignStart="@+id/issuebuttIssuebookframe"
+        android:layout_below="@+id/issuebuttIssuebookframe"
+        android:layout_marginTop="122dp"
+        android:text="Re-Issue Books" />
+
+
+</RelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.librarymanagement.IssueBookFrame">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Name:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nameFissuebookframe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameTextView"
+        android:layout_alignBottom="@+id/nameTextView"
+        android:layout_toEndOf="@+id/phoneNoTextView"
+        android:layout_toRightOf="@+id/phoneNoTextView"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/rnoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Roll No:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/rnoFissuebookframe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rnoTextView"
+        android:layout_alignBottom="@+id/rnoTextView"
+        android:layout_alignLeft="@+id/nameFissuebookframe"
+        android:layout_alignStart="@+id/nameFissuebookframe"
+        android:inputType="number"
+        android:maxLength="10"/>
+
+    <TextView
+        android:id="@+id/classTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Class:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/phoneNoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Phone No:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/phnoFissuebookframe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phoneNoTextView"
+        android:layout_alignBottom="@+id/phoneNoTextView"
+        android:layout_alignLeft="@+id/bookidFissuebookframe"
+        android:layout_alignStart="@+id/bookidFissuebookframe"
+        android:inputType="phone"
+        android:maxLength="10"/>
+
+    <TextView
+        android:id="@+id/bookIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="BookId-No:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/bookidFissuebookframe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bookIDTextView"
+        android:layout_alignBottom="@+id/bookIDTextView"
+        android:layout_alignLeft="@+id/booktitleFissuebookframe"
+        android:layout_alignStart="@+id/booktitleFissuebookframe"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/bookTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Book Title:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/booktitleFissuebookframe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bookTitleTextView"
+        android:layout_alignBottom="@+id/bookTitleTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/bookIDTextView"
+        android:layout_toRightOf="@+id/bookIDTextView"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/bookAuthorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="325dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Book Author:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/bookauthorFissuebookframe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bookAuthorTextView"
+        android:layout_alignBottom="@+id/bookAuthorTextView"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/bookAuthorTextView"
+        android:layout_toRightOf="@+id/bookAuthorTextView"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/IssueDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Issue Date:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/issuedateFissuebookframe"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/IssueDateTextView"
+        android:layout_alignBottom="@+id/IssueDateTextView"
+        android:layout_toEndOf="@+id/IssueDateTextView"
+        android:layout_toRightOf="@+id/IssueDateTextView"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/issueButtissuebookframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="30dp"
+        android:text="Issue" />
+
+    <Button
+        android:id="@+id/resetButtissuebookframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/issueButtissuebookframe"
+        android:layout_alignBottom="@+id/issueButtissuebookframe"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="Reset" />
+
+    <Spinner
+        android:id="@+id/spinner9IBFT"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phnoFissuebookframe"
+        android:layout_alignStart="@+id/phnoFissuebookframe"
+        android:layout_alignTop="@+id/classTextView" />
+
+    <Spinner
+        android:id="@+id/spinner10IBFS"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/classTextView" />
+
+
+</RelativeLayout>

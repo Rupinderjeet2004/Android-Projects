@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.librarymanagement.reissueFrame">
+
+    <TextView
+        android:id="@+id/bookIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Book ID:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/bookidFaddnewbooks"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bookIDTextView"
+        android:layout_alignBottom="@+id/bookIDTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/bookTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Book Title:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/booktitleFaddnewbooks"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bookTitleTextView"
+        android:layout_alignBottom="@+id/bookTitleTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/bookTitleTextView"
+        android:layout_toRightOf="@+id/bookTitleTextView"
+        android:inputType="text|textCapWords" />
+
+    <TextView
+        android:id="@+id/bookAuthorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Book Author:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/bookauthorFaddnewbooks"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bookAuthorTextView"
+        android:layout_alignBottom="@+id/bookAuthorTextView"
+        android:layout_toEndOf="@+id/bookAuthorTextView"
+        android:layout_toRightOf="@+id/bookAuthorTextView"
+        android:inputType="text|textCapWords" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Date:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/dateFaddnewbooks"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dateTextView"
+        android:layout_alignBottom="@+id/dateTextView"
+        android:layout_toEndOf="@+id/dateTextView"
+        android:layout_toRightOf="@+id/dateTextView"
+        android:inputType="datetime" />
+
+    <Button
+        android:id="@+id/savebuttaddnewwbooksframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateTextView"
+        android:layout_alignStart="@+id/dateTextView"
+        android:layout_below="@+id/dateTextView"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="73dp"
+        android:text="save" />
+
+    <Button
+        android:id="@+id/bookListbuttAddnewbooks"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/savebuttaddnewwbooksframe"
+        android:layout_alignBottom="@+id/savebuttaddnewwbooksframe"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Book list" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.librarymanagement.RemoveBooks">
+
+    <TextView
+        android:id="@+id/bookIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Book ID:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/bookidFremovebooks"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bookIDTextView"
+        android:layout_alignBottom="@+id/bookIDTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/bookTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookidFremovebooks"
+        android:layout_marginTop="33dp"
+        android:layout_toLeftOf="@+id/bookidFremovebooks"
+        android:layout_toStartOf="@+id/bookidFremovebooks"
+        android:fontFamily="sans-serif"
+        android:text="Book Title:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/booktitleFremovebooks"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bookTitleTextView"
+        android:layout_alignBottom="@+id/bookTitleTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/removebuttRemovebooksframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookTitleTextView"
+        android:layout_alignStart="@+id/bookTitleTextView"
+        android:layout_below="@+id/bookTitleTextView"
+        android:layout_marginTop="40dp"
+        android:text="remove" />
+
+    <Button
+        android:id="@+id/booklistButtRemovebooksframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/removebuttRemovebooksframe"
+        android:layout_alignBottom="@+id/removebuttRemovebooksframe"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Books list" />
+
+</RelativeLayout>

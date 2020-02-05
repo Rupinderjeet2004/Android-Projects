@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.librarymanagement.reissueFrame">
+
+    <TextView
+        android:id="@+id/rnoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Roll No:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/rnoFreissueframe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rnoTextView"
+        android:layout_alignBottom="@+id/rnoTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/classTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Class:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bookIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateTextView"
+        android:layout_alignStart="@+id/dateTextView"
+        android:layout_below="@+id/classTextView"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif"
+        android:text="Book ID:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/bookidFreissueframe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bookIDTextView"
+        android:layout_alignBottom="@+id/bookIDTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classTextView"
+        android:layout_alignStart="@+id/classTextView"
+        android:layout_below="@+id/bookIDTextView"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif"
+        android:text="Date:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/dateFreissueframe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dateTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/re_issuebuttreissueframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateTextView"
+        android:layout_alignStart="@+id/dateTextView"
+        android:layout_below="@+id/dateTextView"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="58dp"
+        android:text="Re-Issue" />
+
+    <Button
+        android:id="@+id/issuedbooksbuttreissueframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/re_issuebuttreissueframe"
+        android:layout_alignBottom="@+id/re_issuebuttreissueframe"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Issued Books" />
+
+    <Spinner
+        android:id="@+id/spinner11RIFT"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rnoFreissueframe"
+        android:layout_alignStart="@+id/rnoFreissueframe"
+        android:layout_alignTop="@+id/classTextView" />
+
+    <Spinner
+        android:id="@+id/spinner17RIFS"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/issuedbooksbuttreissueframe"
+        android:layout_alignTop="@+id/classTextView" />
+
+</RelativeLayout>

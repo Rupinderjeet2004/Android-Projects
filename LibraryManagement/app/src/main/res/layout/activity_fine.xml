@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.librarymanagement.reissueFrame">
+
+    <TextView
+        android:id="@+id/rnoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Roll No:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/rnoFfinepage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rnoTextView"
+        android:layout_alignBottom="@+id/rnoTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/classTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookIDTextView"
+        android:layout_alignStart="@+id/bookIDTextView"
+        android:layout_below="@+id/rnoFfinepage"
+        android:layout_marginTop="22dp"
+        android:fontFamily="sans-serif"
+        android:text="Class:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bookIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rnoTextView"
+        android:layout_alignStart="@+id/rnoTextView"
+        android:layout_below="@+id/rnoFfinepage"
+        android:layout_marginTop="71dp"
+        android:fontFamily="sans-serif"
+        android:text="Book ID:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/bookidFfinepage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bookIDTextView"
+        android:layout_alignBottom="@+id/bookIDTextView"
+        android:layout_alignLeft="@+id/spinner21FineT"
+        android:layout_alignStart="@+id/spinner21FineT"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookIDTextView"
+        android:layout_alignStart="@+id/bookIDTextView"
+        android:layout_below="@+id/bookidFfinepage"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif"
+        android:text="Fine:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/savebuttFineframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateTextView"
+        android:layout_alignStart="@+id/dateTextView"
+        android:layout_below="@+id/dateTextView"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="75dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/issuedBooksButtFinePage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/savebuttFineframe"
+        android:layout_alignBottom="@+id/savebuttFineframe"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Issued Books" />
+
+    <Spinner
+        android:id="@+id/spinner21FineT"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rnoFfinepage"
+        android:layout_alignStart="@+id/rnoFfinepage"
+        android:layout_alignTop="@+id/classTextView" />
+
+    <Spinner
+        android:id="@+id/spinner22FineS"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/issuedBooksButtFinePage"
+        android:layout_alignRight="@+id/issuedBooksButtFinePage"
+        android:layout_alignTop="@+id/spinner21FineT"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp" />
+
+    <EditText
+        android:id="@+id/fineFfinepage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dateTextView"
+        android:layout_alignBottom="@+id/dateTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>

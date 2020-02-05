@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.librarymanagement.IssuedBooksButton">
+
+    <TextView
+        android:id="@+id/rnoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Roll No:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/rnoFissuedbooksframe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rnoTextView"
+        android:layout_alignBottom="@+id/rnoTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/classTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner15IBBT"
+        android:layout_alignLeft="@+id/rnoTextView"
+        android:layout_alignStart="@+id/rnoTextView"
+        android:fontFamily="sans-serif"
+        android:text="Class:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner15IBBT"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rnoFissuedbooksframe"
+        android:layout_alignStart="@+id/rnoFissuedbooksframe"
+        android:layout_below="@+id/rnoFissuedbooksframe"
+        android:layout_marginTop="57dp" />
+
+    <Button
+        android:id="@+id/showButtissuedbookframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classTextView"
+        android:layout_alignStart="@+id/classTextView"
+        android:layout_below="@+id/classTextView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="59dp"
+        android:text="Show" />
+
+    <Button
+        android:id="@+id/allissuedButtissuedbookframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/showButtissuedbookframe"
+        android:layout_alignBottom="@+id/showButtissuedbookframe"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="All Issued Books" />
+
+    <Spinner
+        android:id="@+id/spinner16IBBS"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/classTextView"
+        android:layout_alignEnd="@+id/allissuedButtissuedbookframe" />
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.librarymanagement.reissueFrame">
+
+    <TextView
+        android:id="@+id/rnoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Roll No:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/rnoFreturnbooksframe"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rnoTextView"
+        android:layout_alignBottom="@+id/rnoTextView"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/bookIDTextView"
+        android:layout_toRightOf="@+id/bookIDTextView"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/classTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookIDTextView"
+        android:layout_alignStart="@+id/bookIDTextView"
+        android:layout_below="@+id/rnoFreturnbooksframe"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Class:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bookIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Book ID:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/bookidFreturnbooksframe"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bookIDTextView"
+        android:layout_alignBottom="@+id/bookIDTextView"
+        android:layout_alignLeft="@+id/rnoFreturnbooksframe"
+        android:layout_alignStart="@+id/rnoFreturnbooksframe"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookIDTextView"
+        android:layout_alignStart="@+id/bookIDTextView"
+        android:layout_below="@+id/bookidFreturnbooksframe"
+        android:layout_marginTop="17dp"
+        android:fontFamily="sans-serif"
+        android:text="Date:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/dateFreturnbooksframe"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dateTextView"
+        android:layout_alignBottom="@+id/dateTextView"
+        android:layout_alignLeft="@+id/rnoFreturnbooksframe"
+        android:layout_alignStart="@+id/rnoFreturnbooksframe"
+        android:inputType="date"
+        tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/savebuttreturnbookframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateTextView"
+        android:layout_alignStart="@+id/dateTextView"
+        android:layout_below="@+id/dateTextView"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="75dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/issuedbooksbuttreturnbooksframe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/savebuttreturnbookframe"
+        android:layout_alignBottom="@+id/savebuttreturnbookframe"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Issued Books" />
+
+    <Spinner
+        android:id="@+id/spinner21RETBT"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/classTextView"
+        android:layout_marginEnd="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp" />
+
+    <Spinner
+        android:id="@+id/spinner22RETBS"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rnoFreturnbooksframe"
+        android:layout_alignTop="@+id/classTextView"
+        android:layout_alignLeft="@+id/rnoFreturnbooksframe" />
+
+</RelativeLayout>
